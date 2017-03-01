@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="sitoCsspag2.css" rel="stylesheet" >
+    </head>
+    <body>
+
+
+        <div id="container" >
+
+            <div id="cocontainer">
+                <div id="containerF">
+
+                    <div id="head">
+                        <div id="logo">
+
+
+                        </div>
+                    </div>
+                    <div id="sceltaTop">
+                        <a href="file:///home/tss/NetBeansProjects/SitoWeb/public_html/sito.html" style="color:black; text-decoration:none "><div id="scelta1" class="scelta"> Home</div></a>
+                        <a href="" style="color:black; text-decoration:none " > <div id="scelta2" class="scelta">Form</div> </a>
+                        <a href="" style="color:black; text-decoration:none " > <div id="scelta3" class="scelta">Animazione</div> </a>
+                        <a href="" style="color:black; text-decoration:none " > <div id="scelta4" class="scelta">Tabella</div> </a>
+                        <a href="" style="color:black; text-decoration:none " > <div id="scelta5" class="scelta">Contattami</div> </a>
+                    </div>
+
+                    <div id="containerBODY">
+                        
+                            <form>
+                                <table border="1">
+                                    <tr>
+                                        <td align = "center"> <label for="RagSoc">Ragione Sociale: </label></td>
+                                        <td align = "center"><input type ="text" style="width: 150px "   size="10"  placeholder="Inserire rag.soc." id="RagSoc" > </td>
+                                    </tr>
+                                    <tr>
+                                        <td align = "center"><label for="email">Email:  </label></td>
+                                        <td align = "center" ><input type ="text"  style="width: 150px " placeholder="prova@prova.it" id="email" ></td>
+                                    </tr>
+                                    <tr>
+                                        <td align = "center"> <label for="password">Password: </label></td>
+                                        <td align = "center" > <input type ="password"   style="width: 150px" size="10" value="superse" id="password"></td>
+                                    </tr>
+                                    <tr>
+                                        <td align = "center">Sesso: </td>
+                                        <td>
+                                            <input type="radio" name="Sesso" id="sessoM" value=" m"> <label for="sessoM"> Uomo</label> <div> </div> 
+                                            <input type="radio" name="Sesso" id="sessoF" value = "f"> <label for="sessoF"> Donna </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align = "center"> Sport: </td>
+                                        <td>
+                                            <input type="checkbox" id="sport1"> <label for="sport1"> Nuoto </label> <div> </div> 
+                                            <input type="checkbox" id="sport2"> <label for="sport2"> Calcio </label> <div> </div> 
+                                            <input type="checkbox" id="sport3"> <label for="sport3">Tennis  </label> <div> </div> 
+                                            <input type="checkbox" id="sport4"> <label for="sport4">Golf </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align = "center"><label for="note"> Note</label></td>
+                                        <td><textarea cols="30" rows="6" name="note" id="note" placeholder="Inserisci qui le note"> Esempio di nota!</textarea></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" align = "center"><input type="submit" value="Invio " > </td>
+                                    </tr>
+                                </table>
+                            </form>
+                        
+                        
+                        <div id="containerTXT">
+                            <strong> Utilizzo di tabella e form! </strong>
+                            <br><br>
+                            In questa pagina ho utilizzato una tabella con un form  per ricevere delle informazioni dall'utente e 
+                            tranquillo al momento non vengono salvate da nessuna parte! 
+                            <br>
+                            Un form su una pagina HTML permette all'utente di inserire informazioni che possono essere inviate e salvate su un server!
+                            <br>
+                            La struttura della tabella , nella parte dove è permesso inserire dati , è composta da elementi con 
+                            TAG "input" che possono essere di vario tipo come ad esempio text , password , ecc...
+                            ed ogni elemento ha delle funzioni ben precise! 
+                            <br>
+                            Gli "input" di tipo text ci permettono di chiedere ragione sociale e l'email dell'utente.
+                            <br>
+                            Gli "input" di tipo password sono come i text ma nascondono quello che viene scritto.
+                            <br>
+                            Gli "input" di tipo radio ci permettono di avere una scelta SINGOLA  e in questo caso sono perfetti per dare all'utente l'opzione di selezionare il sesso.
+                            <br>
+                            Gli "input" di tipo checkbox ci permettono invece di avere una scelta MULTIPLA e l'utente può selezionare una o più opzioni
+                            <br>
+                            Il campo note utilizza la tag "textarea" e permette all'utente di inserire del testo o dei commenti.
+                            <br> Infine il tasto invio utilizza nuovamente il tag "input" di tipo submit e , al suo click , invia le informazioni a un ipotetico server.
+                            
+                            
+                            
+                            
+                        </div>
+                        </div>
+
+                    
+
+                    <div id="containerFooter">
+                        <div id="footerTXT"> <span>Sito realizzato da: Pastore luca</span> <span id="ciac">Corso seguito presso C.I.A.C. Ivrea</span>  </div>
+                        <div id="ghiglieno"> <span> Per ulteriori informazioni su dove seguire un corso tecnico sviluppo software clicca <a href="http://www.ciacformazione.it/"> QUI</a></span></div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

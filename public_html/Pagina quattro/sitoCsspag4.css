@@ -1,0 +1,225 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 23-feb-2017, 16.03.14
+    Author     : tss
+*/
+/*-----stile pagina-----*/
+body{background-image: url(back2.jpg)}
+
+#container {width: 800px ;
+            border: 10px #57b0e9 solid;
+            margin: 0 auto;
+            height: 1300px;
+            margin-top: 30px;
+            background-color: #87c7f1;
+}
+
+#cocontainer {
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 760px;
+    height: 1260px;
+    border: 10px #a0cfee solid;
+    background-color: #c4e0f2
+}
+
+#containerF {
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 720px;
+    height: 1220px;
+    border: 10px #d4e6f2 solid ;
+    background-color: #edf4f8
+}
+
+/*---fine stile pagina*/
+
+/*-------------------------------------------------------------------------*/
+
+/*---logo pagina + head*/
+#head {
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 45px;
+    height: 50px;
+    border: 1px solid black
+}
+
+#logo {
+    width: 210px; height: 30px;
+    background-image: url(logo.png);
+    background-size: 210px 30px;
+    margin-top: 10px;
+}
+
+/*--- fine logo pagina+head*/
+
+/*-------------------------------------------------------------------------*/
+
+/*----menu di collegamento top----*/
+#sceltaTop{
+    position: relative;
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 700px;
+    height: 30px;
+    /*border: 1px solid black*/
+}
+
+.scelta{
+    margin-left: 100px;
+    height: 30px;
+    border: 1px solid black;
+    width: 100px;
+
+}
+
+#scelta1 {
+    border-right: 0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    line-height: 30px
+
+}
+
+#scelta2 {
+    border-right: 0px;
+    position: absolute;
+    top: 0px;
+    left: 100px;
+    text-align: center;
+    line-height: 30px
+}
+
+#scelta3 {
+    border-right: 0px;
+    position: absolute;
+    top: 0px;
+    left: 200px;
+    text-align: center;
+    line-height: 30px
+}
+#scelta4 {
+    border-right: 0px;
+    position: absolute;
+    top: 0px;
+    left: 300px;
+    text-align: center;
+    line-height: 30px
+}
+#scelta5 {
+    position: absolute;
+    top: 0px;
+    left: 400px;
+    text-align: center;
+    line-height: 30px
+}
+
+/*----- fine menu di collegamento top------*/
+
+
+/*-------------------------------------------------------------------------*/
+
+/*------ body + mosse----*/
+
+
+#containerBODY{
+    left: 10px;
+    position: relative;
+    width: 700px;
+    height: 480px;
+    margin-top: 55px;
+    border: 1px solid black
+}
+#containerBODY span {
+    font-size: 13px;
+    text-align: center;
+    position: relative;
+    left: 276px
+}
+#tabella{
+    width: 700px;
+    height: 480px;
+}
+
+#containerBODY table {
+    position: relative;
+    top: 10px;
+    left: 17px;
+    border-collapse: collapse;
+}
+
+#containerBODY table tr td {
+    width: 15px;
+    height: 15px;
+    border: 1px solid black
+}
+
+
+
+/*-------------------------------------------------------------------------*/
+
+/*----testo----*/
+
+
+#containerTXT{
+    left: 10px;
+    position: relative;
+    width: 700px;
+    height: 300px;
+    margin-top: 30px;
+    border: 1px solid black;
+        font-size: 13px
+    
+}
+
+
+
+
+/*-------------------------------------------------------------------------*/
+
+
+/*----- footer ----*/
+
+
+#containerFooter{
+    border: 1px solid black;
+    position: relative;
+    top: 80px;
+    width: 700px;
+    margin: 0 auto;
+}
+#footerTXT{
+
+    margin: 0 auto;
+    width: 700px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 13px;
+    margin-left:  10px
+
+}
+
+#ciac{
+    float: right;
+    margin-right: 20px
+}
+
+#ghiglieno{
+    margin: 0 auto;
+    width: 700px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 13px;
+    margin-left: 10px
+}
+/*---- fine footer---*/
+
+
+

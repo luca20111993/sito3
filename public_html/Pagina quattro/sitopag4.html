@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="sitoCsspag4.css" rel="stylesheet" >
+        <script src="js/Uncompressed.js" type="text/javascript"></script>
+
+    </head>
+    <body>
+        <script>
+
+            function creaTabellaHTML(righe, colonne, fz) {
+                righe = parseInt(righe)
+                colonne = parseInt(colonne)
+                var html = "<table>"
+                for (var i = 0; i < righe; i++) {
+                    html += "<tr>"
+                    for (var j = 0; j < colonne; j++) {
+                        html += "<td>"
+                        html += fz(i, j)
+                        html += "</td>"
+                    }
+                    html += "</tr>"
+                }
+
+                html += "</table>"
+                return html
+            }
+
+            function crea() {
+                var r = 24
+                var c = 37
+
+                var t = creaTabellaHTML(r, c,
+                        function (riga, colonna) {
+
+                            return ""
+                        }
+                )
+                document.getElementById("tabella").innerHTML = t;
+            }
+
+
+        </script>
+
+
+        <div id="container" >
+
+            <div id="cocontainer">
+                <div id="containerF">
+
+                    <div id="head">
+                        <div id="logo">
+
+
+                        </div>
+                    </div>
+                    <div id="sceltaTop">
+                        <a href="file:///home/tss/NetBeansProjects/SitoWeb/public_html/sito.html" style="color:black; text-decoration:none "><div id="scelta1" class="scelta"> Home</div></a>
+                        <a href="" style="color:black; text-decoration:none " > <div id="scelta2" class="scelta">Form</div> </a>
+                        <a href="" style="color:black; text-decoration:none " > <div id="scelta3" class="scelta">Animazione</div> </a>
+                        <a href="" style="color:black; text-decoration:none " > <div id="scelta4" class="scelta">Tabella</div> </a>
+                        <a href="" style="color:black; text-decoration:none " > <div id="scelta5" class="scelta">Contattami</div> </a>
+                    </div>
+
+                    <div id="containerBODY">
+                        <span><strong> Clicca sui quadratini! </strong></span>
+                        <div id="tabella">
+
+                        </div>
+
+                    </div>
+                    <div id="containerTXT">
+
+
+                    </div>
+
+
+
+                    <div id="containerFooter">
+                        <div id="footerTXT"> <span>Sito realizzato da: Pastore luca</span> <span id="ciac">Corso seguito presso C.I.A.C. Ivrea</span>  </div>
+                        <div id="ghiglieno"> <span> Per ulteriori informazioni su dove seguire un corso tecnico sviluppo software clicca <a href="http://www.ciacformazione.it/"> QUI</a></span></div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+        <script>
+            crea()
+
+
+
+
+
+
+            $("#tabella  table td").click(function () {
+                $(this).css("background-color", "#1111f7")
+
+            })
+        </script>
+    </body>
+</html>

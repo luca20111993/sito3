@@ -1,0 +1,512 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 23-feb-2017, 16.03.14
+    Author     : tss
+*/
+/*-----stile pagina-----*/
+body{background-image: url(back2.jpg)}
+
+#container {width: 800px ;
+            border: 10px #57b0e9 solid;
+            margin: 0 auto;
+            height: 1300px;
+            margin-top: 30px;
+            background-color: #87c7f1;
+}
+
+#cocontainer {
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 760px;
+    height: 1260px;
+    border: 10px #a0cfee solid;
+    background-color: #c4e0f2
+}
+
+#containerF {
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 720px;
+    height: 1220px;
+    border: 10px #d4e6f2 solid ;
+    background-color: #edf4f8
+}
+
+/*---fine stile pagina*/
+
+/*-------------------------------------------------------------------------*/
+
+/*---logo pagina + head*/
+#head {
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 45px;
+    height: 50;
+    border: 1px solid black
+}
+
+#logo {
+    width: 210; height: 30;
+    background-image: url(logo.png);
+    background-size: 210px 30px;
+    margin-top: 10px;
+}
+
+/*--- fine logo pagina+head*/
+
+/*-------------------------------------------------------------------------*/
+
+/*----menu di collegamento top----*/
+#sceltaTop{
+    position: relative;
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 700px;
+    height: 30px;
+    /*border: 1px solid black*/
+}
+
+.scelta{
+    margin-left: 100px;
+    height: 30px;
+    border: 1px solid black;
+    width: 100px;
+
+}
+
+#scelta1 {
+    border-right: 0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    line-height: 30px
+
+}
+
+#scelta2 {
+    border-right: 0px;
+    position: absolute;
+    top: 0px;
+    left: 100;
+    text-align: center;
+    line-height: 30px
+}
+
+#scelta3 {
+    border-right: 0px;
+    position: absolute;
+    top: 0px;
+    left: 200;
+    text-align: center;
+    line-height: 30px
+}
+#scelta4 {
+    border-right: 0px;
+    position: absolute;
+    top: 0px;
+    left: 300;
+    text-align: center;
+    line-height: 30px
+}
+#scelta5 {
+    position: absolute;
+    top: 0px;
+    left: 400;
+    text-align: center;
+    line-height: 30px
+}
+
+/*----- fine menu di collegamento top------*/
+
+
+/*-------------------------------------------------------------------------*/
+
+/*------ body + mosse----*/
+
+
+#containerBODY{
+    left: 10px;
+    position: relative;
+    width: 700px;
+    height: 480px;
+    margin-top: 55px;
+    border: 1px solid black
+}
+
+/*primo quadrante sx sx*/
+div#primoOggetto{ 
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    position: relative;
+    top: 215px;
+    left: 335px;
+    border-radius: 10px 10px 10px 10px;
+
+    
+    
+    animation-name: primamossa;
+    animation-duration: 8s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+
+}
+
+@keyframes primamossa {
+    0%   {background-color:#ff66ccd; left:335px; top:215px;}
+    33%  {background-color:#99ff99; left:335px; top:115px;}
+    66%  {background-color:#0099ff; left:235px; top:115px;}
+    100%  {background-color:#ff3333; left:135px; top:115px;}
+}
+
+/*primo quadrante sx top*/
+div#secondoOggetto {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    position: relative;
+    top: 183px;
+    left: 335px;
+    border-radius: 10px 10px 10px 10px;
+
+
+    animation-name: secondamossa;
+    animation-duration: 8s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+}
+
+@keyframes secondamossa {
+    0%   {background-color:#ff66ccd; left:335px; top:183px;}
+    33%  {background-color:#99ff99; left:335px; top:83px;}
+    66%  {background-color:#0099ff; left:235px; top:83px;}
+    100%  {background-color:#ff3333; left:235px; top:-17px;}
+}
+
+/*primo quadrante sx bot*/
+div#terzoOggetto{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    position: relative;
+    top: 151px;
+    left: 335px;
+    border-radius: 10px 10px 10px 10px;
+
+
+    animation-name: terzamossa;
+    animation-duration: 8s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+}
+@keyframes terzamossa {
+    0%   {background-color:#ff66ccd; left:335px; top:151px;}
+    33%  {background-color:#99ff99; left:335px; top:51px;}
+    66%  {background-color:#0099ff; left:235px; top:51px;}
+    100%  {background-color:#ff3333; left:235px; top:151px;}
+}
+
+/*secondo quadrante dx dx*/
+div#quartoOggetto{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    position: relative;
+    top: 119px;
+    left: 335px;
+    border-radius: 10px 10px 10px 10px;
+
+
+    animation-name: quartamossa;
+    animation-duration: 8s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+}
+@keyframes quartamossa {
+    0%   {background-color:#ff66ccd; left:335px; top:119px;}
+    33%  {background-color:#99ff99; left:335px; top:19px;}
+    66%  {background-color:#0099ff; left:435px; top:19px;}
+    100%  {background-color:#ff3333; left:535px; top:19px;}
+}
+
+/*secondo quadrante dx top*/
+div#quintoOggetto{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    position: relative;
+    top: 87px;
+    left: 335px;
+    border-radius: 10px 10px 10px 10px;
+
+
+    animation-name: quintamossa;
+    animation-duration: 8s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+}
+@keyframes quintamossa {
+    0%   {background-color:#ff66ccd; left:335px; top:87px;}
+    33%  {background-color:#99ff99; left:335px; top:-13px;}
+    66%  {background-color:#0099ff; left:435px; top:-13px;}
+    100%  {background-color:#ff3333; left:435px; top:-113px;}
+}
+
+/*secondo quadrante dx bot*/
+div#sestoOggetto{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    position: relative;
+    top: 55px;
+    left: 335px;
+    border-radius: 10px 10px 10px 10px;
+
+
+    animation-name: sestamossa;
+    animation-duration: 8s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+}
+@keyframes sestamossa {
+    0%   {background-color:#ff66ccd; left:335px; top:55px;}
+    33%  {background-color:#99ff99; left:335px; top:-45px;}
+    66%  {background-color:#0099ff; left:435px; top:-45px;}
+    100%  {background-color:#ff3333; left:435px; top:55px;}
+}
+
+
+
+
+/*----------------7+------------*/
+
+
+
+/*terzo quadrante sx sx*/
+div#settimoOggetto{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    position: relative;
+    top: 23px;
+    left: 335px;
+    border-radius: 10px 10px 10px 10px;
+
+
+    animation-name: settimamossa;
+    animation-duration: 8s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+}
+@keyframes settimamossa {
+    0%   {background-color:#ff66ccd; left:335px; top:23px;}
+    33%  {background-color:#99ff99; left:335px; top:123px;}
+    66%  {background-color:#0099ff; left:235px; top:123px;}
+    100%  {background-color:#ff3333; left:135px; top:123px;}
+}
+
+/*terzo quadrante sx top*/
+div#ottavoOggetto{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    position: relative;
+    top: -9px;
+    left: 335px;
+    border-radius: 10px 10px 10px 10px;
+
+
+    animation-name: ottavamossa;
+    animation-duration: 8s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+}
+@keyframes ottavamossa {
+    0%   {background-color:#ff66ccd; left:335px; top:-9px;}
+    33%  {background-color:#99ff99; left:335px; top:91px;}
+    66%  {background-color:#0099ff; left:235px; top:91px;}
+    100%  {background-color:#ff3333; left:235px; top:-9px;}
+}
+
+/*terzo quadrante sx bot*/
+div#nonoOggetto{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    position: relative;
+    top: -41px;
+    left: 335px;
+    border-radius: 10px 10px 10px 10px;
+
+
+    animation-name: nonamossa;
+    animation-duration: 8s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+}
+@keyframes nonamossa {
+    0%   {background-color:#ff66ccd; left:335px; top:-41px;}
+    33%  {background-color:#99ff99; left:335px; top:59px;}
+    66%  {background-color:#0099ff; left:235px; top:59px;}
+    100%  {background-color:#ff3333; left:235px; top:159px;}
+}
+
+
+/*quarto quadrante dxdx*/
+div#decimoOggetto{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    position: relative;
+    top: -73px;
+    left: 335px;
+    border-radius: 10px 10px 10px 10px;
+
+
+    animation-name: decimamossa;
+    animation-duration: 8s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+}
+@keyframes decimamossa {
+    0%   {background-color:#ff66ccd; left:335px; top:-73px;}
+    33%  {background-color:#99ff99; left:335px; top:27px;}
+    66%  {background-color:#0099ff; left:435px; top:27px;}
+    100%  {background-color:#ff3333; left:535px; top:27px;}
+}
+
+
+/*quarto quadrante dx top*/
+div#undicesimoOggetto{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    position: relative;
+    top: -105px;
+    left: 335px;
+    border-radius: 10px 10px 10px 10px;
+
+
+    animation-name: undicesimamossa;
+    animation-duration: 8s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+}
+@keyframes undicesimamossa {
+    0%   {background-color:#ff66ccd; left:335px; top:-105px;}
+    33%  {background-color:#99ff99; left:335px; top:-5px;}
+    66%  {background-color:#0099ff; left:435px; top:-5px;}
+    100%  {background-color:#ff3333; left:435px; top:-105px;}
+}
+
+/*quarto quadrante dx top*/
+div#dodicesimoOggetto{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    position: relative;
+    top: -137px;
+    left: 335px;
+    border-radius: 10px 10px 10px 10px;
+
+
+    animation-name: dodicesimamossa;
+    animation-duration: 8s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+}
+@keyframes dodicesimamossa {
+    0%   {background-color:#ff66ccd; left:335px; top:-137px;}
+    33%  {background-color:#99ff99; left:335px; top:-37px;}
+    66%  {background-color:#0099ff; left:435px; top: -37px;}
+    100%  {background-color:#ff3333; left:435px; top:63px;}
+}
+
+
+
+
+/*--- fine aborto ----*/
+/*-------------------------------------------------------------------------*/
+
+/*----testo----*/
+
+
+#containerTXT{
+    left: 10px;
+    position: relative;
+    width: 700px;
+    height: 300px;
+    margin-top: 30px;
+    border: 1px solid black;
+        font-size: 13px
+    
+}
+#containerTXT span {
+    position: relative;
+    left: 230px;
+    text-align: center;
+    font-size: 13px
+}
+
+
+
+
+
+/*-------------------------------------------------------------------------*/
+
+
+/*----- footer ----*/
+
+
+#containerFooter{
+    border: 1px solid black;
+    position: relative;
+    top: 80px;
+    width: 700px;
+    margin: 0 auto;
+}
+#footerTXT{
+
+    margin: 0 auto;
+    width: 700px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 13px;
+    margin-left:  10px
+
+}
+
+#ciac{
+    float: right;
+    margin-right: 20px
+}
+
+#ghiglieno{
+    margin: 0 auto;
+    width: 700px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 13px;
+    margin-left: 10px
+}
+/*---- fine footer---*/
+
+
+
