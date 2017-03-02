@@ -45,15 +45,16 @@ body{background-image: url(back2.jpg)}
     width: 700px;
     margin: 0 auto;
     margin-top: 45px;
-    height: 50;
-    border: 1px solid black
+    height: 50px;
+    
 }
 
 #logo {
-    width: 210; height: 30;
+    width: 210px; height: 30px;
     background-image: url(logo.png);
     background-size: 210px 30px;
     margin-top: 10px;
+    margin-left: 240px
 }
 
 /*--- fine logo pagina+head*/
@@ -92,7 +93,7 @@ body{background-image: url(back2.jpg)}
     border-right: 0px;
     position: absolute;
     top: 0px;
-    left: 100;
+    left: 100px;
     text-align: center;
     line-height: 30px
 }
@@ -101,7 +102,7 @@ body{background-image: url(back2.jpg)}
     border-right: 0px;
     position: absolute;
     top: 0px;
-    left: 200;
+    left: 200px;
     text-align: center;
     line-height: 30px
 }
@@ -109,14 +110,14 @@ body{background-image: url(back2.jpg)}
     border-right: 0px;
     position: absolute;
     top: 0px;
-    left: 300;
+    left: 300px;
     text-align: center;
     line-height: 30px
 }
 #scelta5 {
     position: absolute;
     top: 0px;
-    left: 400;
+    left: 400px;
     text-align: center;
     line-height: 30px
 }

@@ -17,33 +17,33 @@ and open the template in the editor.
         <script>
 
             function creaTabellaHTML(righe, colonne, fz) {
-                righe = parseInt(righe)
-                colonne = parseInt(colonne)
-                var html = "<table>"
+                righe = parseInt(righe);
+                colonne = parseInt(colonne);
+                var html = "<table>";
                 for (var i = 0; i < righe; i++) {
-                    html += "<tr>"
+                    html += "<tr>";
                     for (var j = 0; j < colonne; j++) {
-                        html += "<td>"
-                        html += fz(i, j)
-                        html += "</td>"
+                        html += "<td>";
+                        html += fz(i, j);
+                        html += "</td>";
                     }
-                    html += "</tr>"
+                    html += "</tr>";
                 }
 
-                html += "</table>"
-                return html
+                html += "</table>";
+                return html;
             }
 
             function crea() {
-                var r = 24
-                var c = 37
+                var r = 24;
+                var c = 37;
 
                 var t = creaTabellaHTML(r, c,
                         function (riga, colonna) {
 
-                            return ""
+                            return "";
                         }
-                )
+                );
                 document.getElementById("tabella").innerHTML = t;
             }
 
@@ -78,7 +78,16 @@ and open the template in the editor.
 
                     </div>
                     <div id="containerTXT">
-
+                        <span><strong>Mosaici fai da te!</strong></span> <br> <br>
+                        Beh che dire? non sembra molto ma per me farlo è stato tutto meno che facile!!
+                        <br> <br>Cominciamo col dire che solo ultimamente abbiamo cominciato ad usare javascript e da ancora meno tempo jQuery quindi non ho potuto fare
+                        tutto quello che avrei voluto ma sono sicuro di poter migliorare. 
+                        <br><br> La creazione della tabella non è stata effettuata a mano ma ho usato due metodi di javascript ; Il primo , quello generico , mi permette la creazione di tabelle
+                        di dimensioni generiche e il secondo , richiamando il primo , permette la costruzione di una tabella con dimensioni e contenuto specifico. 
+                        <br>Queste due funzioni mi hanno permesso in poco tempo
+                        di avere una tabella di grosse dimensioni in un tempo irrisorio.<br>
+                        <br>Invece per cambiare colore alle caselle con il semplice "click" mi sono servito dell'ausilio di Jquery; Quest'ultimo è una libreria di javascript che ci permette
+                        di fare più cose scrivendo meno e questo non guasta mai 
 
                     </div>
 
@@ -96,17 +105,27 @@ and open the template in the editor.
             </div>
         </div>
         <script>
-            crea()
+            crea();
 
 
+            $("#tabella table tr:nth-child(2n+1) td:nth-child(2n+1)").click(function () {
+                $(this).css("background-color", "#87c7f1");
 
+            });
+            $("#tabella table tr:nth-child(2n) td:nth-child(2n+1)").click(function () {
+                $(this).css("background-color", "#ff6666");
 
+            });
+            
+            $("#tabella table tr:nth-child(2n) td:nth-child(2n)").click(function () {
+                $(this).css("background-color", "#99ff99");
 
+            });
+            
+            $("#tabella table tr:nth-child(2n+1) td:nth-child(2n)").click(function () {
+                $(this).css("background-color", "#ffff99");
 
-            $("#tabella  table td").click(function () {
-                $(this).css("background-color", "#1111f7")
-
-            })
+            });
         </script>
     </body>
 </html>
